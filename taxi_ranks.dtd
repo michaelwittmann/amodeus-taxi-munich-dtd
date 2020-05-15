@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!ELEMENT ranks (rank)*>
+
+<!ELEMENT rank (#PCDATA)>
+
+<!ATTLIST rank
+        id          CDATA   #REQUIRED
+        capacity    CDATA   #REQUIRED
+        description CDATA   #REQUIRED
+        x           CDATA   #REQUIRED
+        y           CDATA   #REQUIRED>
