@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!ELEMENT zones (zone)*>
+<!ELEMENT zone (#PCDATA)>
+<!ATTLIST zone
+        id        CDATA   #REQUIRED
+        geom      CDATA   #REQUIRED>
