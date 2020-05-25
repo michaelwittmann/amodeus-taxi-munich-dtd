@@ -4,4 +4,4 @@
 <!ELEMENT zone (#PCDATA)>
 <!ATTLIST zone
         id        CDATA   #REQUIRED
-        geom      CDATA   #REQUIRED>
+        wkt      CDATA   #REQUIRED>
