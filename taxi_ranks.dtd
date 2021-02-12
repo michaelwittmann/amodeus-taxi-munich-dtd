@@ -8,5 +8,6 @@
         id          CDATA   #REQUIRED
         capacity    CDATA   #REQUIRED
         description CDATA   #REQUIRED
+        popularity  CDATA   #IMPLIED
         x           CDATA   #REQUIRED
         y           CDATA   #REQUIRED>
