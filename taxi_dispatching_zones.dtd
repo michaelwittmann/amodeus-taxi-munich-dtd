@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!ELEMENT zones (zone)*>
-<!ELEMENT zone (#PCDATA)>
-<!ATTLIST zone
-        id        CDATA   #REQUIRED
-        wkt      CDATA   #REQUIRED>
+        <!ELEMENT zones (zone)*>
+        <!ELEMENT alternative_zones (#PCDATA)>
+        <!ATTLIST alternative_zones
+                id        CDATA   #REQUIRED>
+        <!ELEMENT zone (#PCDATA| alternative_zones*)>
+        <!ATTLIST zone
+                id        CDATA   #REQUIRED
+                wkt      CDATA   #REQUIRED>
