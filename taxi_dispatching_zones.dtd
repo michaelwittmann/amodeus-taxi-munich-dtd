@@ -4,7 +4,7 @@
         <!ELEMENT alternative_zone (#PCDATA)>
         <!ATTLIST alternative_zone
                 id        CDATA   #REQUIRED>
-        <!ELEMENT zone (#PCDATA| alternative_zones)>
+        <!ELEMENT zone (#PCDATA| alternative_zones)*>
         <!ATTLIST zone
                 id        CDATA   #REQUIRED
                 wkt      CDATA   #REQUIRED>
