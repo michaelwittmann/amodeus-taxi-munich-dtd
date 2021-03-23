@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!ELEMENT demandprediction (prediction)*>
+<!ELEMENT uniform_grid_with_border_predictions (prediction)*>
 <!ELEMENT prediction (grid_cells, border_cells?)>
 <!ELEMENT grid_cells (cell)*>
 <!ELEMENT border_cells (cell)*>
