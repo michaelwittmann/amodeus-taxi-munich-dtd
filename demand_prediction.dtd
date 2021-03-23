@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT demandprediction (prediction)*>
+<!ELEMENT prediction (grid_cells, border_cells?)>
+<!ELEMENT grid_cells (cell)*>
+<!ELEMENT border_cells (cell)*>
+<!ELEMENT cell (y_hat)*>
+<!ELEMENT y_hat (#PCDATA)>
+<!ATTLIST demandprediction
+	start_date  CDATA   #REQUIRED
+	stop_date   CDATA   #REQUIRED
+	n_grid_rows CDATA   #REQUIRED
+	n_grid_columns CDATA   #REQUIRED
+	borderWidth CDATA   #REQUIRED
+	x_min CDATA   #REQUIRED
+	x_max CDATA   #REQUIRED
+	y_min CDATA   #REQUIRED
+	y_max CDATA   #REQUIRED
+	prediction_windows CDATA   #REQUIRED
+	prediction_horizon CDATA   #REQUIRED>
+<!ATTLIST cell
+	id  CDATA   #REQUIRED
+	description   CDATA   #IMPLIED>
+<!ATTLIST prediction
+	time  CDATA   #REQUIRED>
+<!ATTLIST y_hat
+	t  CDATA   #REQUIRED
+	value CDATA #REQUIRED>
