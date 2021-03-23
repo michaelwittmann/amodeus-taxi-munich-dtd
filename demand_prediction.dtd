@@ -5,7 +5,7 @@
 <!ELEMENT border_cells (cell)*>
 <!ELEMENT cell (y_hat)*>
 <!ELEMENT y_hat (#PCDATA)>
-<!ATTLIST demandprediction
+<!ATTLIST uniform_grid_with_border_predictions
 	start_date  CDATA   #REQUIRED
 	stop_date   CDATA   #REQUIRED
 	n_grid_rows CDATA   #REQUIRED
